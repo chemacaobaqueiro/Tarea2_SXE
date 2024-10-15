@@ -23,3 +23,15 @@ Si aparece Alpine significa que funciona
     ```sh
     sudo docker container start <nombre>      #en el apartado donde pone nombre tenemos que poner el nombre que le dimos al contenedor
     ```
+
+ 3. Crea un contenedor con el nombre 'dam_alp1'. ¿Como puedes acceder a él?
+ 
+  ***Para crear un contenedor con nombre usamos:***
+    ```sh
+    sudo docker container create -i -t --name dam_alp1 alpine   #Aquí creamos el contenedor y le ponemos de nombre dam_alp1
+    ```
+  
+  ***Posteriormente ya cuando tenemos el contenedor con nombre creado debemos iniciarlo, para ello lanzamos esta linea:***
+    ```sh
+    sudo docker container start --attach -i dam_alp1      #con este comando a parte de iniciarlo con el start, a parte con el --attach accedemos directamente a el
+    ```

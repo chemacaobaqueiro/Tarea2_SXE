@@ -98,3 +98,13 @@
  
  - ***El contenedor dam_alp1 ocupa: 21B***
  - ***El contenedor dam_alp2 ocupa: 38B***
+
+8. ¿Cuanta RAM ocupan los contenedores? ¿Hay algún comando docker para saber esto?.
+
+ ***Para comprobar esto existe el siguiente comando:***
+ 
+  ```shell
+  sudo docker stats 
+  ```
+ 
+ ***Cada contenedor consume ahora mismo ***515Kib******

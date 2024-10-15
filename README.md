@@ -78,10 +78,23 @@
   sudo docker start --attach -i dam_alp2
   ```
   
-   ***Por último en cada terminallanzamos ***ip a*** y ***ping 172.17.0.2******
+   ***Por último en cada terminal lanzamos ***ip a*** y ***ping 172.17.0.2******
  
  6. Sal del terminal, ¿que ocurrió con el contenedor?
 
      ***Para salir del terminal utilizamos ***Ctrl+D******
 
      ***Al salir se apaga el contenedor, pero si se abre en una terminal nueva y cerramos la terminal sin el comando anterior se sigue ejecutando***
+
+7. ¿Cuanta memoria en el disco duro ocupaste?
+
+ ***Para comprobar la memoria ocupada utilizamos el comando:***
+ 
+  ```shell
+  sudo docker system df -v
+  ```
+ 
+ ***Con esto podemos ver cuanto ocupan los contenedores***
+ 
+ - ***El contenedor dam_alp1 ocupa: 21B***
+ - ***El contenedor dam_alp2 ocupa: 38B***
